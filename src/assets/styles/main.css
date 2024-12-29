@@ -1,0 +1,77 @@
+/* src/assets/styles/main.css */
+
+/* google fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Playwrite+FR+Trad+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    text-align: center;
+    align-items: center;
+}
+
+/* each poem page view */
+.poem-page-container {
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.poem-page-container h1 {
+    font-size: 4em;
+    font-family: "Bellefair", serif;
+    letter-spacing: 0px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.poem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 40vw;
+}
+
+.poem-container img {
+    width: 40vw;
+    height: auto;
+}
+
+.poem-container p {
+    text-align: right;
+    font-size: 1em;
+    font-family: "Bellefair", serif;
+}
+
+.poem-container .subtitle {
+    font-size: .8em;
+    font-family: "Bellefair", serif;
+}
+
+/* end of each poem page view */
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    /* each poem page view */
+    .poem-container {
+        width: 90vw;
+        align-items: center;
+    }
+
+    .poem-container img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .poem-container p {
+        text-align: right;
+        font-size: .95em;
+    }
+    /* end each poem page view */
+}
+
+
+
