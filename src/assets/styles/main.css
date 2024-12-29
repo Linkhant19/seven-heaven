@@ -33,6 +33,7 @@ body {
     align-items: end;
     justify-content: center;
     width: 40vw;
+    position: relative;
 }
 
 .poem-container img {
@@ -51,7 +52,166 @@ body {
     font-family: "Bellefair", serif;
 }
 
+.popup-word {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popup-boy {
+    position: absolute;
+    top: 68vh; 
+    left: 65%; 
+    transform: translateX(-50%);
+    background-color: rgb(75, 75, 27);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: 300px;
+    opacity: 0.93;
+}
+
+.popup-boy:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid rgb(75, 75, 27);
+    border-top: 10px solid rgb(75, 75, 27);
+    border-bottom: 10px solid transparent;
+    right: 19px;
+    bottom: -10px;
+}
+
+.popup-boy p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.popup-rat {
+    position: absolute;
+    top: 133vh; 
+    left: 60%; 
+    transform: translateX(-50%);
+    background-color: rgb(75, 75, 27);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: 300px;
+    opacity: 0.93;
+}
+
+.popup-rat p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.popup-rat:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid rgb(75, 75, 27);
+    border-top: 10px solid rgb(75, 75, 27);
+    border-bottom: 10px solid transparent;
+    right: 72px;
+    bottom: -10px;
+}
 /* end of each poem page view */
+
+
+
+/* start of stars in the background */
+#stars3 {
+    width: 3px;
+    height: 1.5px;
+    background: transparent;
+    box-shadow: 592px 1415px #000000 , 1686px 1715px #000000 , 82px 989px #000000 , 102px 922px #000000 , 1800px 283px #000000 , 61px 428px #000000 , 1416px 534px #000000 , 1699px 999px #000000 , 1672px 344px #000000 , 365px 1299px #000000 , 307px 673px #000000 , 203px 1911px #000000 , 319px 931px #000000 , 658px 1085px #000000 , 216px 1625px #000000 , 65px 131px #000000 , 1919px 110px #000000 , 1159px 1969px #000000 , 1898px 1803px #000000 , 987px 1815px #000000 , 1975px 1458px #000000 , 1931px 1974px #000000 , 1301px 538px #000000 , 1285px 1793px #000000 , 834px 402px #000000 , 1027px 1189px #000000 , 1803px 790px #000000 , 533px 1138px #000000 , 1549px 1651px #000000 , 1018px 1034px #000000 , 705px 491px #000000 , 51px 1415px #000000 , 21px 1613px #000000 , 586px 657px #000000 , 1774px 1439px #000000 , 658px 1389px #000000 , 694px 1600px #000000 , 284px 1282px #000000 , 1876px 237px #000000 , 1590px 403px #000000 , 262px 1318px #000000 , 1489px 160px #000000 , 523px 67px #000000 , 1482px 748px #000000 , 959px 717px #000000 , 143px 1253px #000000 , 1366px 789px #000000 , 1085px 1735px #000000 , 1734px 1471px #000000 , 420px 1624px #000000 , 1466px 1561px #000000 , 872px 586px #000000 , 873px 347px #000000 , 1361px 1793px #000000 , 961px 697px #000000 , 1464px 1479px #000000 , 1847px 398px #000000 , 1724px 35px #000000 , 502px 1925px #000000 , 987px 1012px #000000 , 362px 1979px #000000 , 1103px 39px #000000 , 1753px 1167px #000000 , 907px 1476px #000000 , 1111px 296px #000000 , 1500px 1161px #000000 , 1138px 362px #000000 , 1033px 1257px #000000 , 715px 1052px #000000 , 249px 623px #000000 , 1782px 1963px #000000 , 1250px 594px #000000 , 1138px 474px #000000 , 1280px 1999px #000000 , 630px 112px #000000 , 429px 1504px #000000 , 508px 210px #000000 , 1334px 1462px #000000 , 1044px 1305px #000000 , 1031px 80px #000000 , 1678px 250px #000000 , 1592px 1919px #000000 , 1184px 1144px #000000 , 126px 415px #000000 , 1647px 519px #000000 , 1780px 1970px #000000 , 1970px 1973px #000000 , 571px 1267px #000000 , 6px 1572px #000000 , 1354px 553px #000000 , 898px 1337px #000000 , 1195px 1405px #000000 , 1986px 1523px #000000 , 462px 1495px #000000 , 782px 605px #000000 , 128px 1361px #000000 , 1771px 287px #000000 , 755px 1310px #000000 , 1052px 1903px #000000 , 203px 1121px #000000;
+    animation: animStar 150s linear infinite;
+  }
+
+#stars3:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 1.5px;
+    background: transparent;
+    box-shadow: 592px 1415px #000000 , 1686px 1715px #000000 , 82px 989px #000000 , 102px 922px #000000 , 1800px 283px #000000 , 61px 428px #000000 , 1416px 534px #000000 , 1699px 999px #000000 , 1672px 344px #000000 , 365px 1299px #000000 , 307px 673px #000000 , 203px 1911px #000000 , 319px 931px #000000 , 658px 1085px #000000 , 216px 1625px #000000 , 65px 131px #000000 , 1919px 110px #000000 , 1159px 1969px #000000 , 1898px 1803px #000000 , 987px 1815px #000000 , 1975px 1458px #000000 , 1931px 1974px #000000 , 1301px 538px #000000 , 1285px 1793px #000000 , 834px 402px #000000 , 1027px 1189px #000000 , 1803px 790px #000000 , 533px 1138px #000000 , 1549px 1651px #000000 , 1018px 1034px #000000 , 705px 491px #000000 , 51px 1415px #000000 , 21px 1613px #000000 , 586px 657px #000000 , 1774px 1439px #000000 , 658px 1389px #000000 , 694px 1600px #000000 , 284px 1282px #000000 , 1876px 237px #000000 , 1590px 403px #000000 , 262px 1318px #000000 , 1489px 160px #000000 , 523px 67px #000000 , 1482px 748px #000000 , 959px 717px #000000 , 143px 1253px #000000 , 1366px 789px #000000 , 1085px 1735px #000000 , 1734px 1471px #000000 , 420px 1624px #000000 , 1466px 1561px #000000 , 872px 586px #000000 , 873px 347px #000000 , 1361px 1793px #000000 , 961px 697px #000000 , 1464px 1479px #000000 , 1847px 398px #000000 , 1724px 35px #000000 , 502px 1925px #000000 , 987px 1012px #000000 , 362px 1979px #000000 , 1103px 39px #000000 , 1753px 1167px #000000 , 907px 1476px #000000 , 1111px 296px #000000 , 1500px 1161px #000000 , 1138px 362px #000000 , 1033px 1257px #000000 , 715px 1052px #000000 , 249px 623px #000000 , 1782px 1963px #000000 , 1250px 594px #000000 , 1138px 474px #000000 , 1280px 1999px #000000 , 630px 112px #000000 , 429px 1504px #000000 , 508px 210px #000000 , 1334px 1462px #000000 , 1044px 1305px #000000 , 1031px 80px #000000 , 1678px 250px #000000 , 1592px 1919px #000000 , 1184px 1144px #000000 , 126px 415px #000000 , 1647px 519px #000000 , 1780px 1970px #000000 , 1970px 1973px #000000 , 571px 1267px #000000 , 6px 1572px #000000 , 1354px 553px #000000 , 898px 1337px #000000 , 1195px 1405px #000000 , 1986px 1523px #000000 , 462px 1495px #000000 , 782px 605px #000000 , 128px 1361px #000000 , 1771px 287px #000000 , 755px 1310px #000000 , 1052px 1903px #000000 , 203px 1121px #000000;
+}
+
+  
+@keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+}
+
+@media screen and (orientation: portrait) {
+
+    #header {
+        margin-top: -2vh;
+        margin-bottom: -2vh;
+        font-size: 9.9vw;
+    }
+
+    #heading {
+        font-size: 3.3vw;
+    }
+
+    #author {
+        font-size: 3.35vw;
+    }
+
+    #words {
+        margin-top: -12vw;
+        font-size: 2.9vw;
+        line-height: 3.1vw;
+    }
+
+    div img {
+        width: 87vw;
+        height: 69vw;
+    }
+}
+/* end of stars */
+
+
+/* start of footer */
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    margin: 30px;
+    padding-left: 35px;
+}
+
+.main-footer p {
+    margin-top: -10px;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.name {
+    font-style: italic;
+}
+/* end of footer */
+
 
 /* media queries */
 @media screen and (max-width: 768px) {
@@ -70,7 +230,33 @@ body {
         text-align: right;
         font-size: .95em;
     }
+
+    .popup-boy {
+        top: 380px; 
+        left: 50%; 
+    }
+
+    .popup-boy:before {
+        right: 40px;
+        bottom: -10px;
+    }
+
+    .popup-rat {
+        top: 930px; 
+        left: 50%; 
+    }
+
+    .popup-rat:before {
+        right: 130px;
+        bottom: -10px;
+    }
     /* end each poem page view */
+
+    /* footer */
+    .main-footer {
+        align-items: center;
+    }
+    /* end of footer */
 }
 
 
