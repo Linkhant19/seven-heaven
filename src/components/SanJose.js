@@ -1,8 +1,8 @@
 // src/components/SanJose.js
 // San Jose page view
 
-import React, { useState } from 'react';
-import '../assets/styles/main.css';
+import React, { useState, useEffect } from 'react';
+import '../assets/styles/main2.css';
 import Footer from './Footer';
 
 const image = require('../assets/images/photo1.JPG');
@@ -20,6 +20,28 @@ function SanJose() {
         setShowPopupRat(!showPopupRat);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY; 
+            const maxScroll = document.body.scrollHeight - window.innerHeight; 
+            const scale = 3;  // so that we can acheive the desired effect faster
+            const minOpacity = 0.1;  // minimum opacity value that I want
+            const newOpacity = Math.max(
+                minOpacity,
+                1 - Math.min((scrollTop / maxScroll) * scale, 1) 
+            );
+            
+            const imageElement = document.querySelector('.poem-container img');
+            if (imageElement) {
+                imageElement.style.opacity = newOpacity;  // assigning the new opacity
+            }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll); 
+    }, []);
+       
+
     return (
         <div> 
             <div className='poem-page-container'>
@@ -30,7 +52,11 @@ function SanJose() {
                     <p className='subtitle'>
                         San Jose | May 2024<br />
                     </p>
-                    <img src={image} alt="San Jose" />
+                    <div className='poem-image-container'>
+                        <div className="image-background">
+                            <img src={image} alt="San Jose" className="poem-image" />
+                        </div>
+                    </div>
                     <p>
                         Three months in and you invited me over <br />
                         “Come stay with me at my parents’ house over summer.” <br />

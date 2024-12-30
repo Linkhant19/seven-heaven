@@ -1,0 +1,232 @@
+/* src/assets/styles/main.css */
+
+/* google fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Playwrite+FR+Trad+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    text-align: center;
+    align-items: center;
+    background-color: black;
+}
+
+/* each poem page view */
+.poem-page-container {
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.poem-page-container h1 {
+    font-size: 4em;
+    font-family: "Bellefair", serif;
+    letter-spacing: 0px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.poem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 40vw;
+    position: relative;
+    overflow-y: auto;      
+    overflow-x: hidden;
+}
+
+.poem-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border: 5px solid black;
+    border-radius: 40px;
+    width: 45vw;
+    height: 34.9vw;
+    z-index: -1;
+}
+
+.poem-container img {
+    width: 45vw;
+    height: 35vw;
+    border: 5px solid black;
+    border-radius: 40px;
+    background-color: white;
+    position: relative; 
+    transition: opacity 0.2s ease-in-out;
+    z-index: -1;
+}
+
+.poem-container p {
+    margin-top: 70px;
+    text-align: right;
+    font-size: 1em;
+    font-family: "Bellefair", serif;
+}
+
+.poem-container .subtitle {
+    font-size: .8em;
+    font-family: "Bellefair", serif;
+}
+
+.popup-word {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popup-boy {
+    position: absolute;
+    top: 68vh; 
+    left: 65%; 
+    transform: translateX(-50%);
+    background-color: rgb(75, 75, 27);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: 300px;
+    opacity: 0.93;
+}
+
+.popup-boy:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid rgb(75, 75, 27);
+    border-top: 10px solid rgb(75, 75, 27);
+    border-bottom: 10px solid transparent;
+    right: 19px;
+    bottom: -10px;
+}
+
+.popup-boy p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.popup-rat {
+    position: absolute;
+    top: 133vh; 
+    left: 60%; 
+    transform: translateX(-50%);
+    background-color: rgb(75, 75, 27);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: 300px;
+    opacity: 0.93;
+}
+
+.popup-rat p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.popup-rat:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid rgb(75, 75, 27);
+    border-top: 10px solid rgb(75, 75, 27);
+    border-bottom: 10px solid transparent;
+    right: 72px;
+    bottom: -10px;
+}
+/* end of each poem page view */
+
+
+/* start of footer */
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    margin: 30px;
+    padding-left: 35px;
+}
+
+.main-footer p {
+    margin-top: -10px;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.name {
+    font-style: italic;
+}
+/* end of footer */
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    /* each poem page view */
+    .poem-container {
+        width: 90vw;
+        align-items: center;
+    }
+
+    .poem-container img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .poem-container p {
+        text-align: right;
+        font-size: .95em;
+    }
+
+    .popup-boy {
+        top: 380px; 
+        left: 50%; 
+    }
+
+    .popup-boy:before {
+        right: 40px;
+        bottom: -10px;
+    }
+
+    .popup-rat {
+        top: 930px; 
+        left: 50%; 
+    }
+
+    .popup-rat:before {
+        right: 130px;
+        bottom: -10px;
+    }
+    /* end each poem page view */
+
+    /* footer */
+    .main-footer {
+        align-items: center;
+    }
+    /* end of footer */
+}
+
+
+
