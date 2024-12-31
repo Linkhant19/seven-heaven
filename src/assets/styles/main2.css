@@ -225,6 +225,10 @@ body {
         height: 69vw;
     }
 
+    .poem-page-container h1 {
+        letter-spacing: -20px;
+    }
+
     .poem-container img {
         width: 90vw;
         height: 70vw;
