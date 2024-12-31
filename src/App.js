@@ -4,6 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home.js';
 import SanJose from './components/SanJose.js';
 import Wonder from './components/Wonder.js';
+import Mission21 from './components/Mission21.js';
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/san-jose' element={<SanJose />} />
       <Route path='/wonder' element={<Wonder />} />
+      <Route path='/mission21' element={<Mission21 />} />
     </Routes>
   );
 }
