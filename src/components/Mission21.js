@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import '../assets/styles/main2.css';
 import Footer from './Footer';
 
-const image = require('../assets/images/photo3.JPG');
+const image = require('../assets/images/photo4.JPG');
 
 function Mission21() {
     // use state for some clickable popups
