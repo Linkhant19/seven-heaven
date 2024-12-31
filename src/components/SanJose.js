@@ -35,6 +35,19 @@ function SanJose() {
             if (imageElement) {
                 imageElement.style.opacity = newOpacity;  // assigning the new opacity
             }
+
+            // for h1 title with id poem-title
+            const textShadow = '1px 1px 0px white, -1px 1px 0px white,  1px -1px 0px white, -1px -1px 0px white';
+            const titleElement = document.getElementById('poem-title');
+            if (titleElement) {
+                titleElement.style.textShadow = newOpacity > 0.9 ? textShadow : 'none';
+            }
+
+            // if opacity is less than 0.2, set the text in direction-text to ' '
+            const directionTextElement = document.getElementById('direction-text');
+            if (directionTextElement) {
+                directionTextElement.style.opacity = newOpacity > 0.4 ? 1 : 0;
+            }
         };
     
         window.addEventListener('scroll', handleScroll);
@@ -47,7 +60,8 @@ function SanJose() {
             <div className='poem-page-container'>
                 <div id='stars3'></div>
                 <div id='stars3'></div>
-                <h1>San Jose</h1>
+                <p id='direction-text'>Scroll Up ↑</p>
+                <h1 id='poem-title'>San Jose</h1>
                 <div className="poem-container">
                     <p className='subtitle'>
                         San Jose | May 2024<br />
@@ -61,7 +75,7 @@ function SanJose() {
                         Three months in and you invited me over <br />
                         “Come stay with me at my parents’ house over summer.” <br />
                         I had my doubts but my little ghosts say, <br />
-                        “This is the slowest you’ve taken with a <span className='popup-word'onClick={togglePopupBoy}>boy</span> anyway.” <br />
+                        “This is the slowest you’ve taken with a <span className='popup-word' onClick={togglePopupBoy}>boy</span> anyway.” <br />
                         <br />
                         <br />
 
@@ -141,6 +155,10 @@ function SanJose() {
                     )}
                 </div>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
             <br />
             <br />
             <br />
