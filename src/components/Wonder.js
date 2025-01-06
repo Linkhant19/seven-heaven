@@ -51,7 +51,11 @@ function Wonder() {
                 <div id='stars3'></div>
                 <div id='stars3'></div>
                 <p id='direction-text'>Scroll Up ↑</p>
-                <h1 id='poem-title'>Wonder</h1>
+                
+                <div className='poem-title-container'>
+                    <h1 id='poem-title'>Wonder</h1>
+                </div>
+                
                 <div className="poem-container">
                     <p className='subtitle'>
                         Wonder | July 2024<br />

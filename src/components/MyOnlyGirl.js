@@ -51,7 +51,11 @@ function MyOnlyGirl() {
                 <div id='stars3'></div>
                 <div id='stars3'></div>
                 <p id='direction-text'>Scroll Up ↑</p>
-                <h1 id='poem-title'>My Only Girl</h1>
+                
+                <div className='poem-title-container'>
+                    <h1 id='poem-title'>My Only Girl</h1>
+                </div>
+
                 <div className="poem-container">
                     <p className='subtitle'>
                         My Only Girl | August 2024<br />
@@ -63,32 +67,32 @@ function MyOnlyGirl() {
                     </div>
                     <p>
                         She said, “It’s crazy that you pulled a girl like me.”<br />
-                            silent.<br />
+                            <span className='middle-word'>silent.</span><br />
                         I just stared at midnight,<br />
                         gleaming with the moonlight.<br />
                         <br />
 
                         A curious boy found a dangerous mind mid-January.<br />
-                            beat.<br />
+                            <span className='middle-word'>beat.</span><br />
                         I just stared in her eyes.<br />
                         Timing is a good time. <br />
                         <br />
 
                         Then, I guess life took over.<br />
                         All just went straight into a…tornado.<br />
-                            beat.<br />
+                            <span className='middle-word'>beat.</span><br />
                         Life on the stage of a circus show<br />
                         I hung on a thread and she let go.<br />
                         Then, just before I crushed my bones,<br />
                         Come saving me was my only girl. <br />
-                            beat.<br />
+                            <span className='middle-word'>beat.</span><br />
                         Life on the voyage in the seven seas<br />
                         I ignored the stars so you stayed with me. <br />
                         I created fake Gods and crafted beliefs. <br />
                         Just so I can make sense of keeping you with me.<br />
                         <br />
 
-                            pause.<br />
+                            <span className='middle-word'>pause.</span><br />
                             <br />
 
                         When she grabbed my hand and took me places, <br />
@@ -110,7 +114,7 @@ function MyOnlyGirl() {
 
                         When she took my first kiss without asking me first,<br />
                         the moment she pulled back,<br />
-                            beat.<br />
+                            <span className='middle-word'>beat.</span><br />
                         I had fallen in love.<br />
                         <br />
 
@@ -128,12 +132,12 @@ function MyOnlyGirl() {
 
                         Until life took over.<br />
                         And. All. Just. Went. Straight. Into. A… Tornado.<br />
-                            beat.<br />
+                            <span className='middle-word'>beat.</span><br />
                         Life on the stage of a circus show<br />
                         I hung on a thread and she let go.<br />
                         Then, just before I crushed my bones,<br />
                         Come saving me was my only girl. <br />
-                            beat.<br />
+                            <span className='middle-word'>beat.</span><br />
                         Life on the voyage in the seven seas<br />
                         I ignored the stars so you stayed with me. <br />
                         I created fake Gods and crafted beliefs. <br />
@@ -141,7 +145,7 @@ function MyOnlyGirl() {
                         <br />
 
                         She said, “It’s crazy that you pulled a girl like me.”<br />
-                            silent.<br />
+                            <span className='middle-word'>silent.</span><br />
                     <br />
                     <br />
                     <br />

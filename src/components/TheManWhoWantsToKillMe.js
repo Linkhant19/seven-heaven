@@ -51,7 +51,12 @@ function TheManWhoWantsToKillMe() {
                 <div id='stars3'></div>
                 <div id='stars3'></div>
                 <p id='direction-text'>Scroll Up ↑</p>
-                <h1 id='poem-title'>The Man Who Wants To Kill Me</h1>
+
+                <div className='poem-title-container'>
+                    <h1 id='poem-title'>The Man Who Wants To Kill Me</h1>
+                </div>
+
+                
                 <div className="poem-container">
                     <p className='subtitle'>
                         The Man Who Wants To Kill Me | August 2024<br />

@@ -51,7 +51,11 @@ function Mission21() {
                 <div id='stars3'></div>
                 <div id='stars3'></div>
                 <p id='direction-text'>Scroll Up ↑</p>
-                <h1 id='poem-title'>Mission 21</h1>
+
+                <div className='poem-title-container'>
+                    <h1 id='poem-title'>Mission 21</h1>
+                </div>
+                
                 <div className="poem-container">
                     <p className='subtitle'>
                         Mission 21 | December 2024<br />

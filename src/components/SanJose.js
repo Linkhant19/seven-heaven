@@ -38,7 +38,7 @@ function SanJose() {
 
             // for h1 title with id poem-title
             const textShadow = '1px 1px 0px white, -1px 1px 0px white,  1px -1px 0px white, -1px -1px 0px white';
-            const titleElement = document.getElementById('poem-title');
+            const titleElement = document.getElementById('poem-title-san-jose');
             if (titleElement) {
                 titleElement.style.textShadow = newOpacity > 0.9 ? textShadow : 'none';
             }
@@ -61,7 +61,11 @@ function SanJose() {
                 <div id='stars3'></div>
                 <div id='stars3'></div>
                 <p id='direction-text'>Scroll Up ↑</p>
-                <h1 id='poem-title'>San Jose</h1>
+
+                <div className='poem-title-container'>
+                    <h1 id='poem-title-san-jose'>San Jose</h1>
+                </div>
+
                 <div className="poem-container">
                     <p className='subtitle'>
                         San Jose | May 2024<br />
