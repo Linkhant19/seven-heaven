@@ -15,7 +15,7 @@ function MyOnlyGirl() {
             const scrollTop = window.scrollY; 
             const maxScroll = document.body.scrollHeight - window.innerHeight; 
             const scale = 3;  // so that we can acheive the desired effect faster
-            const minOpacity = 0.1;  // minimum opacity value that I want
+            const minOpacity = 0.05;  // minimum opacity value that I want
             const newOpacity = Math.max(
                 minOpacity,
                 1 - Math.min((scrollTop / maxScroll) * scale, 1) 
@@ -30,7 +30,7 @@ function MyOnlyGirl() {
             const textShadow = '1px 1px 0px white, -1px 1px 0px white,  1px -1px 0px white, -1px -1px 0px white';
             const titleElement = document.getElementById('poem-title');
             if (titleElement) {
-                titleElement.style.textShadow = newOpacity > 0.9 ? textShadow : 'none';
+                titleElement.style.textShadow = newOpacity > 0.95 ? textShadow : 'none';
             }
 
             // if opacity is less than 0.2, set the text in direction-text to ' '
@@ -77,6 +77,8 @@ function MyOnlyGirl() {
                         I just stared in her eyes.<br />
                         Timing is a good time. <br />
                         <br />
+                        <br />
+                        <br />
 
                         Then, I guess life took over.<br />
                         All just went straight into a…tornado.<br />
@@ -91,8 +93,10 @@ function MyOnlyGirl() {
                         I created fake Gods and crafted beliefs. <br />
                         Just so I can make sense of keeping you with me.<br />
                         <br />
+                        <br />
 
                             <span className='middle-word'>pause.</span><br />
+                            <br />
                             <br />
 
                         When she grabbed my hand and took me places, <br />
@@ -128,6 +132,7 @@ function MyOnlyGirl() {
 
                         I was in love...<br />
                         with falling in love. <br />
+                        <br />
                         <br />
 
                         Until life took over.<br />

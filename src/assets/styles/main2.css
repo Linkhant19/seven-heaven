@@ -18,6 +18,36 @@ body {
     background-color: black;
 }
 
+h1 {
+    color: white;
+}
+
+/* start of main home page view */
+.main-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+    width: 800vw;
+    gap: 50vw;
+    margin-right: 50vw;
+}
+
+.main-image {
+    width: 45vw;
+    height: 35vw;
+    border: 5px solid black;
+    border-radius: 40px;
+    background-color: white;
+    position: relative; 
+    transition: opacity 0.2s ease-in-out;
+    z-index: -1;
+    transform: translateX(50%);
+}
+
+/* end of main home page view */
+
 /* each poem page view */
 .poem-page-container {
     /* background-color: black; */
@@ -123,17 +153,63 @@ body {
     transition: 0.2s ease-in-out;
 }
 
+#direction-text2 {
+    font-family: "Bellefair", serif;
+    color: white;
+    position: fixed; 
+    top: 12vh; 
+    left: 60vw; 
+    transform: translate(-12%, -30%); 
+    transition: 0.2s ease-in-out;
+}
+
 .popup-word {
     color: black;
     text-decoration: underline;
     cursor: pointer;
 }
 
+.popup {
+    position: absolute;
+    top: 3vh; 
+    /* because there is too much variablity in changing the width */
+    left: calc(65% - 330px);
+    /* transform: translateX(-50%); */
+    background-color: rgb(75, 75, 27);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: 300px;
+    opacity: 0.93;
+}
+
+.popup:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid rgb(75, 75, 27);
+    border-top: 10px solid rgb(75, 75, 27);
+    border-bottom: 10px solid transparent;
+    right: 19px;
+    bottom: -10px;
+}
+
+.popup p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}
+
 .popup-boy {
     position: absolute;
-    top: 22vh; 
+    top: 23vh; 
     /* because there is too much variablity in changing the width */
-    left: calc(65% - 100px);
+    left: calc(65% - 250px);
     /* transform: translateX(-50%); */
     background-color: rgb(75, 75, 27);
     border: 1px solid #ccc;
@@ -167,9 +243,9 @@ body {
 
 .popup-rat {
     position: absolute;
-    top: 88vh; 
+    top: 100vh; 
     /* because there is too much variablity in changing the width */
-    left: calc(60% - 100px); 
+    left: calc(60% - 270px); 
     background-color: rgb(75, 75, 27);
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -265,6 +341,11 @@ body {
         line-height: 115px;
     }
 
+    #poem-title-san-jose {
+        font-size: 10em;
+        line-height: 130px;
+    }
+
     .poem-container img {
         width: 90vw;
         height: 70vw;
@@ -272,7 +353,7 @@ body {
 
     .poem-container p {
         text-align: right;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     #direction-text {
@@ -280,9 +361,19 @@ body {
         left: 10vw; 
     }
 
+    #direction-text2 {
+        top: 20vh; 
+        left: 60vw; 
+    }
+
+    .popup {
+        top: 3vh; 
+        left: -10%;
+    }
+
     .popup-boy {
         top: 180px; 
-        left: 50%; 
+        left: 7%; 
     }
 
     .popup-boy:before {
@@ -291,8 +382,8 @@ body {
     }
 
     .popup-rat {
-        top: 730px; 
-        left: 50%; 
+        top: 820px; 
+        left: 8%; 
     }
 
     .popup-rat:before {

@@ -9,9 +9,13 @@ const image = require('../assets/images/photo1.JPG');
 
 function SanJose() {
     // use state for some clickable popups
+    const [showPopup, setShowPopup] = useState(false);
     const [showPopupBoy, setShowPopupBoy] = useState(false);
     const [showPopupRat, setShowPopupRat] = useState(false);
 
+    const togglePopup = () => {
+        setShowPopup(!showPopup);
+    };
     const togglePopupBoy = () => {
         setShowPopupBoy(!showPopupBoy);
     };
@@ -24,8 +28,8 @@ function SanJose() {
         const handleScroll = () => {
             const scrollTop = window.scrollY; 
             const maxScroll = document.body.scrollHeight - window.innerHeight; 
-            const scale = 3;  // so that we can acheive the desired effect faster
-            const minOpacity = 0.1;  // minimum opacity value that I want
+            const scale = 4;  // so that we can acheive the desired effect faster
+            const minOpacity = 0.05;  // minimum opacity value that I want
             const newOpacity = Math.max(
                 minOpacity,
                 1 - Math.min((scrollTop / maxScroll) * scale, 1) 
@@ -40,13 +44,18 @@ function SanJose() {
             const textShadow = '1px 1px 0px white, -1px 1px 0px white,  1px -1px 0px white, -1px -1px 0px white';
             const titleElement = document.getElementById('poem-title-san-jose');
             if (titleElement) {
-                titleElement.style.textShadow = newOpacity > 0.9 ? textShadow : 'none';
+                titleElement.style.textShadow = newOpacity > 0.95 ? textShadow : 'none';
             }
 
             // if opacity is less than 0.2, set the text in direction-text to ' '
             const directionTextElement = document.getElementById('direction-text');
             if (directionTextElement) {
                 directionTextElement.style.opacity = newOpacity > 0.4 ? 1 : 0;
+            }
+
+            const directionTextElement2 = document.getElementById('direction-text2');
+            if (directionTextElement2) {
+                directionTextElement2.style.opacity = newOpacity > 0.4 ? 1 : 0;
             }
         };
     
@@ -61,6 +70,7 @@ function SanJose() {
                 <div id='stars3'></div>
                 <div id='stars3'></div>
                 <p id='direction-text'>Scroll Up ↑</p>
+                <p id='direction-text2'>⛧ all poems are fictional.</p>
 
                 <div className='poem-title-container'>
                     <h1 id='poem-title-san-jose'>San Jose</h1>
@@ -68,7 +78,7 @@ function SanJose() {
 
                 <div className="poem-container">
                     <p className='subtitle'>
-                        San Jose | May 2024<br />
+                        San Jose | May 2024 | <span className='popup-word' onClick={togglePopup}>click me</span><br />
                     </p>
                     <div className='poem-image-container'>
                         <div className="image-background">
@@ -104,7 +114,6 @@ function SanJose() {
                         But we were soulmates, <i>San Jose</i>. <br />
                         <br />
                         <br />
-                        <br />
 
                         …And, I remember this action-adventure game we were playing. <br />
                         We climbed to the highest tower, <br />
@@ -117,7 +126,6 @@ function SanJose() {
                         He looked just like you. <br />
                         .<br />
                         .<br />
-                        <br />
                         <br />
 
                         …And, now that we are oversharing, <br />
@@ -147,6 +155,11 @@ function SanJose() {
                         <br />
 
                     </p>
+                    {showPopup && (
+                        <div className='popup'>
+                            <p>click on underlined words for details.</p>
+                        </div>
+                    )}
                     {showPopupBoy && (
                         <div className="popup-boy">
                             <p>Boy (n): a male child or adolescent.</p>

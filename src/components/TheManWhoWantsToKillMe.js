@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import '../assets/styles/main2.css';
 import Footer from './Footer';
 
-const image = require('../assets/images/photo5.JPG');
+const image = require('../assets/images/photo2.JPG');
 
 function TheManWhoWantsToKillMe() {
     // use state for some clickable popups
@@ -14,8 +14,8 @@ function TheManWhoWantsToKillMe() {
         const handleScroll = () => {
             const scrollTop = window.scrollY; 
             const maxScroll = document.body.scrollHeight - window.innerHeight; 
-            const scale = 3;  // so that we can acheive the desired effect faster
-            const minOpacity = 0.1;  // minimum opacity value that I want
+            const scale = 4;  // so that we can acheive the desired effect faster
+            const minOpacity = 0.05;  // minimum opacity value that I want
             const newOpacity = Math.max(
                 minOpacity,
                 1 - Math.min((scrollTop / maxScroll) * scale, 1) 
@@ -30,7 +30,7 @@ function TheManWhoWantsToKillMe() {
             const textShadow = '1px 1px 0px white, -1px 1px 0px white,  1px -1px 0px white, -1px -1px 0px white';
             const titleElement = document.getElementById('poem-title');
             if (titleElement) {
-                titleElement.style.textShadow = newOpacity > 0.9 ? textShadow : 'none';
+                titleElement.style.textShadow = newOpacity > 0.95 ? textShadow : 'none';
             }
 
             // if opacity is less than 0.2, set the text in direction-text to ' '
@@ -70,6 +70,7 @@ function TheManWhoWantsToKillMe() {
                         Every morning, <br />
                         I look in the mirror and see the man who wanted to kill me last night.<br /> 
                         <br />
+                        <br />
 
                         Every night, <br />
                         I hide from him.<br />
@@ -93,6 +94,7 @@ function TheManWhoWantsToKillMe() {
                         we could be as bright as the stars above. <br />
                         He whispered back to me, <br />
                         “Every brightest star had to die first.”<br />
+                        <br />
                         <br />
 
                         Every morning, <br />

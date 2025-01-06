@@ -2,7 +2,7 @@
 // footer component
 
 import React from 'react';
-import '../assets/styles/main.css';
+import '../assets/styles/main2.css';
 
 function Footer() {
     return (
