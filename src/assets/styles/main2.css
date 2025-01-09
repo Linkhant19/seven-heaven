@@ -23,7 +23,7 @@ h1 {
 }
 
 /* start of main home page view */
-.main-image-container {
+/* .main-image-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,16 +34,221 @@ h1 {
     margin-right: 50vw;
 }
 
+.main-page-container h1 {
+    font-size: 5em;
+    font-family: "Bellefair", serif;
+    font-weight: 550;
+    font-style: normal;
+    letter-spacing: -10px;
+    line-height: 140px;
+}
+
+.main-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border: 5px solid black;
+    border-radius: 40px;
+    border-radius: 50px 50px 0 0;
+    width: 45vw;
+    height: 34.9vw;
+    z-index: -1;
+}
+
 .main-image {
     width: 45vw;
     height: 35vw;
     border: 5px solid black;
     border-radius: 40px;
+    border-radius: 50px 50px 0 0;
     background-color: white;
     position: relative; 
     transition: opacity 0.2s ease-in-out;
     z-index: -1;
     transform: translateX(50%);
+} */
+:root {
+    --glow-color: hsl(186 100% 69%);
+  }
+
+.main-page-container h1 {
+    font-size: 5em;
+    font-family: "Bellefair", serif;
+    font-weight: 550;
+    font-style: normal;
+    letter-spacing: -10px;
+    line-height: 140px;
+}
+
+.doorway-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doorway {
+    width: 40px; 
+    height: 60px; 
+    border: 5px solid rgb(209, 217, 227);
+    border-radius: 50px 50px 0 0; 
+    margin: 20px auto; 
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 5.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+}
+
+.step1 {
+    width: 40px;
+    height: 5px;
+    border: 1px solid rgb(209, 217, 227);
+    margin: 20px auto; 
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 5.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: .5s;
+}
+
+.step2 {
+    width: 70px;
+    height: 5px;
+    border: 1px solid rgb(209, 217, 227);
+    margin: 20px auto; 
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 5.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 1.5s;
+}
+
+.step3 {
+    width: 100px;
+    height: 5px;
+    border: 1px solid rgb(209, 217, 227);
+    margin: 20px auto; 
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 5.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 2.5s;
+}
+
+.step4 {
+    width: 130px;
+    height: 5px;
+    border: 1px solid rgb(209, 217, 227);
+    margin: 20px auto; 
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 5.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 3.5s;
+}
+
+.step5 {
+    width: 160px;
+    height: 5px;
+    border: 1px solid rgb(209, 217, 227);
+    margin: 20px auto; 
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 5.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 4.5s;
+}
+
+.step6 {
+    width: 190px;
+    height: 5px;
+    border: 1px solid rgb(209, 217, 227);
+    margin: 20px auto; 
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 5.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    opacity: 0; 
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 5.5s;
+}
+
+.step7 {
+    width: 220px;
+    height: 5px;
+    border: 1px solid rgb(209, 217, 227);
+    margin: 20px auto; 
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 5.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 5.5em 0px var(--glow-color);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 6.5s;
+}
+
+
+
+
+.main-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 1.5s;
+
+}
+
+.main-image {
+    width: 50vw;
+    height: 5vh;
+    object-fit: cover;
+    border: 5px solid black;
+    border-radius: 40px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* end of main home page view */
@@ -320,6 +525,13 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+    /* main home page view */
+    .main-image {
+        width: 80vw;
+        height: 5vh;
+    }
+    /* end of main home page view */
+
     /* each poem page view */
     .poem-container {
         width: 90vw;
