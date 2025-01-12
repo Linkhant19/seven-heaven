@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Playwrite+FR+Trad+Guides&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 /* improvement ideas
     1. hide the scroll bar on the side. 
@@ -22,73 +23,62 @@ h1 {
     color: white;
 }
 
-/* start of main home page view */
-/* .main-image-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    overflow: hidden;
-    width: 800vw;
-    gap: 50vw;
-    margin-right: 50vw;
-}
-
-.main-page-container h1 {
-    font-size: 5em;
-    font-family: "Bellefair", serif;
-    font-weight: 550;
-    font-style: normal;
-    letter-spacing: -10px;
-    line-height: 140px;
-}
-
-.main-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white; 
-    position: fixed; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    border: 5px solid black;
-    border-radius: 40px;
-    border-radius: 50px 50px 0 0;
-    width: 45vw;
-    height: 34.9vw;
-    z-index: -1;
-}
-
-.main-image {
-    width: 45vw;
-    height: 35vw;
-    border: 5px solid black;
-    border-radius: 40px;
-    border-radius: 50px 50px 0 0;
-    background-color: white;
-    position: relative; 
-    transition: opacity 0.2s ease-in-out;
-    z-index: -1;
-    transform: translateX(50%);
-} */
 :root {
     --glow-color: hsl(186 100% 69%);
-  }
+}
+
+.main-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .main-page-container h1 {
-    font-size: 5em;
-    font-family: "Bellefair", serif;
+    font-size: 8em;
+    font-family: "Outfit", serif;
     font-weight: 550;
     font-style: normal;
     letter-spacing: -10px;
-    line-height: 140px;
+}
+
+.main-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    top: 8px;
+    margin-left: 45px;
+    position: absolute;
+}
+
+.main-title-container h1 {
+    height: 0px;
+    margin-top: 10px;
+}
+
+.main-title-container .title-seven {
+    font-size: 6em;
+}
+
+.main-title-container .title-ways {
+    font-size: 6em;
+}
+
+.main-title-container .title-to {
+    font-size: 6em;
+}
+
+.main-title-container .title-heaven {
+    font-size: 6em;
+    margin-left: 0px;
+    word-spacing: 50px;
 }
 
 .doorway-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30vh;
 }
 
 .doorway {
@@ -217,8 +207,24 @@ h1 {
     animation-delay: 6.5s;
 }
 
+.each-poem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
-
+.each-poem h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: "Bellefair", serif;
+    color: black;
+    font-weight: 550;
+    font-size: 35px;
+    top: -10px;
+    transition: 1s ease;
+}
 
 .main-image-container {
     display: flex;
@@ -238,8 +244,25 @@ h1 {
     width: 50vw;
     height: 5vh;
     object-fit: cover;
+    object-position: 0% 90%;
     border: 5px solid black;
-    border-radius: 40px;
+    border-radius: 15px;
+    transition: 1s ease;
+}
+
+.each-poem:hover img {
+    height: 30vh;
+    opacity: 22%;
+    transform: perspective(1500px) translateY(-5%) rotateX(45deg) translateZ(0);
+    cursor: pointer;
+}
+
+.each-poem:hover h2 {
+    color: white;
+    text-shadow: -2px 20px 17px var(--glow-color);
+    /* top: -20px; */
+    font-size: 40px;
+    cursor: pointer;
 }
 
 @keyframes fadeIn {
@@ -530,6 +553,16 @@ h1 {
         width: 80vw;
         height: 5vh;
     }
+
+    .main-title-container {
+        top: 30px;
+    }
+
+    .main-page-container h1 {
+        font-size: 6.9em;
+        letter-spacing: -6px;
+        line-height: 80px;
+    }
     /* end of main home page view */
 
     /* each poem page view */
@@ -566,6 +599,8 @@ h1 {
     .poem-container p {
         text-align: right;
         font-size: 1.1em;
+        margin-right: 20px;
+        margin-left: 10px;
     }
 
     #direction-text {
@@ -584,8 +619,8 @@ h1 {
     }
 
     .popup-boy {
-        top: 180px; 
-        left: 7%; 
+        top: 210px; 
+        left: 4%; 
     }
 
     .popup-boy:before {
@@ -594,8 +629,8 @@ h1 {
     }
 
     .popup-rat {
-        top: 820px; 
-        left: 8%; 
+        top: 880px; 
+        left: 3%; 
     }
 
     .popup-rat:before {
