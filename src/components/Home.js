@@ -13,43 +13,43 @@ const poems = [
     {
         src: require('../assets/images/photo1.JPG'),
         alt: 'Poem 01',
-        title: 'San Jose',
+        title: '1. San Jose',
         link: '/san-jose'
     },
     {
         src: require('../assets/images/photo3.JPG'),
         alt: 'Poem 02',
-        title: 'My Only Girl',
+        title: '2. My Only Girl',
         link: '/my-only-girl'
     },
     {
-        src: require('../assets/images/photo5.JPG'),
+        src: require('../assets/images/photo4.JPG'),
         alt: 'Poem 03',
-        title: 'The Man Who Wants To Kill Me',
+        title: '3. The Man Who Wants To Kill Me',
         link: '/the-man-who-wants-to-kill-me'
     },
     {
-        src: require('../assets/images/photo4.JPG'),
+        src: require('../assets/images/photo5.JPG'),
         alt: 'Poem 04',
-        title: 'The Fourth Poem And A Fourth Wall Break',
-        link: '/the-fourth-poem-and-a-fourth-wall-break'
+        title: '4. A Madman At The Gates',
+        link: '/a-madman-at-the-gates'
     },    
     {
-        src: require('../assets/images/photo13.JPG'),
+        src: require('../assets/images/photo2.JPG'),
         alt: 'Poem 05',
-        title: 'Crown Dreams',
-        link: '/crown-dreams'
+        title: '5. Wonder',
+        link: '/wonder'
     },
     {
-        src: require('../assets/images/photo2.JPG'),
+        src: require('../assets/images/photo13.JPG'),
         alt: 'Poem 06',
-        title: 'Wonder',
-        link: '/wonder'
+        title: '6. Crown Dreams',
+        link: '/crown-dreams'
     },
     {
         src: require('../assets/images/photo6.JPG'),
         alt: 'Poem 07',
-        title: 'Seven Ways To Heaven',
+        title: '7. Seven Ways To Heaven',
         link: '/seven-ways-to-heaven'
     }
 ]
@@ -78,15 +78,22 @@ function Home() {
 
                     {/* table of contents */}
                     <div className='main-image-container'>
-                        {
-                            poems.map((poem, index) => (
-                                <div className='each-poem' onClick={()=>window.location.href=poem.link}>
-                                    <img src={poem.src} alt={poem.alt} className='main-image' onClick={()=>window.location.href=poem.link} key={index} />
-                                    <h2>{poem.title}</h2>
-                                </div>
-                            ))
-                        }
+                        {poems.map((poem, index) => (
+                            <div
+                                className='each-poem'
+                                key={index}
+                                onClick={() => window.open(poem.link, '_blank')}
+                            >
+                                <img
+                                    src={poem.src}
+                                    alt={poem.alt}
+                                    className='main-image'
+                                />
+                                <h2>{poem.title}</h2>
+                            </div>
+                        ))}
                     </div>
+
                     {/* end of table of contents */}
                 </div>
 

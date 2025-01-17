@@ -7,6 +7,7 @@ import Wonder from './components/Wonder.js';
 import Mission21 from './components/Mission21.js';
 import TheManWhoWantsToKillMe from './components/TheManWhoWantsToKillMe.js';
 import MyOnlyGirl from './components/MyOnlyGirl.js';
+import SevenWaysToHeaven from './components/SevenWaysToHeaven.js';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/mission21' element={<Mission21 />} />
       <Route path='/the-man-who-wants-to-kill-me' element={<TheManWhoWantsToKillMe />} />
       <Route path='/my-only-girl' element={<MyOnlyGirl />} />
+      <Route path='/seven-ways-to-heaven' element={<SevenWaysToHeaven />} />
     </Routes>
   );
 };
