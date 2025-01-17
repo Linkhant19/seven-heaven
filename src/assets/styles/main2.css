@@ -59,20 +59,30 @@ h1 {
 }
 
 .main-title-container .title-seven {
-    color: rgb(114, 22, 22);
+    /* color: rgb(114, 22, 22); */
+    font-family: "Playwrite FR Trad Guides", serif;
+    font-size: 2.5em;
+    margin-bottom: 69px;
 }
 
 .main-title-container .title-ways {
-    color: rgb(114, 22, 22);;
+    /* color: rgb(114, 22, 22); */
+    font-family: "Playwrite FR Trad Guides", serif;
+    font-size: 2.5em;
+    margin-bottom: 69px;
 }
 
 .main-title-container .title-to {
-    color: rgb(114, 22, 22);;
+    /* color: rgb(114, 22, 22); */
+    font-family: "Playwrite FR Trad Guides", serif;
+    font-size: 2.5em;
+    margin-bottom: 69px;
 }
 
 .main-title-container .title-heaven {
     color: white;
     word-spacing: 50px;
+    margin-top: 12px;
 }
 
 .doorway-container {
