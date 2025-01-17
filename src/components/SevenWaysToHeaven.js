@@ -220,7 +220,7 @@ function SevenWaysToHeaven() {
 
                         <span className='way'>
                                 
-                                all of this to say,<br />
+                                even after all this,<br />
                                 the fastest way to heaven…<br />
                         is to fall in love with someone who can never love you back.<br />
                         <br />

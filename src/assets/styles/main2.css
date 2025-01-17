@@ -324,6 +324,11 @@ h1 {
     line-height: 130px;
 }
 
+.poem-title-container .poem-title-madman { 
+    font-size: 13em;
+    line-height: 160px;
+}
+
 
 .poem-container {
     display: flex;
@@ -520,6 +525,11 @@ h1 {
 }
 
 .way {
+    font-style: italic;
+}
+
+.dreamy {
+    margin-right: 20%;
     font-style: italic;
 }
 /* end of each poem page view */

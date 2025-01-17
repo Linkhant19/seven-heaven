@@ -9,13 +9,9 @@ const image = require('../assets/images/photo1.JPG');
 
 function SanJose() {
     // use state for some clickable popups
-    const [showPopup, setShowPopup] = useState(false);
     const [showPopupBoy, setShowPopupBoy] = useState(false);
     const [showPopupRat, setShowPopupRat] = useState(false);
 
-    const togglePopup = () => {
-        setShowPopup(!showPopup);
-    };
     const togglePopupBoy = () => {
         setShowPopupBoy(!showPopupBoy);
     };
@@ -78,7 +74,7 @@ function SanJose() {
 
                 <div className="poem-container">
                     <p className='subtitle'>
-                        San Jose | May 2024 | <span className='popup-word' onClick={togglePopup}>click me</span><br />
+                        San Jose | May 2024 <br />
                     </p>
                     <div className='poem-image-container'>
                         <div className="image-background">
@@ -153,13 +149,14 @@ function SanJose() {
 
                         I knew no one else was going to love me. <br />
                         <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
 
                     </p>
-                    {showPopup && (
-                        <div className='popup'>
-                            <p>click on underlined words for details.</p>
-                        </div>
-                    )}
                     {showPopupBoy && (
                         <div className="popup-boy">
                             <p>Boy (n): a male child or adolescent.</p>
