@@ -58,9 +58,9 @@ function Home() {
     return (
         <div className='main-page-container'>
             <div className='main-title-container'>
-                <h1 className='title-seven'>SEVEN</h1>
-                <h1 className='title-ways'>WAYS</h1>
-                <h1 className='title-to'>TO</h1>
+                <h1 className='title-seven'>Seven Ways</h1>
+                {/* <h1 className='title-ways'>Ways</h1> */}
+                <h1 className='title-to'>to</h1>
                 <h1 className='title-heaven'>HE VEN</h1>
             </div>
             <div className='main-contents-container'>
