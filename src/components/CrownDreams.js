@@ -4,6 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/styles/main2.css';
 import Footer from './Footer';
+import Header from './Header';
 
 const image = require('../assets/images/photo13.JPG');
 
@@ -47,6 +48,7 @@ function CrownDreams() {
 
     return (
         <div> 
+            <Header />
             <div className='poem-page-container'>
                 <div id='stars3'></div>
                 <div id='stars3'></div>
