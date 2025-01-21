@@ -9,14 +9,15 @@ import Header from './Header';
 const image = require('../assets/images/photo6.JPG');
 
 function SevenWaysToHeaven() {
-    // use state for some clickable popups
+    // no body border for this page
+    document.body.style.border = 'none';
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY; 
             const maxScroll = document.body.scrollHeight - window.innerHeight; 
             const scale = 6;  // so that we can acheive the desired effect faster
-            const minOpacity = 0.05;  // minimum opacity value that I want
+            const minOpacity = 0.04;  // minimum opacity value that I want
             const newOpacity = Math.max(
                 minOpacity,
                 1 - Math.min((scrollTop / maxScroll) * scale, 1) 
@@ -39,6 +40,11 @@ function SevenWaysToHeaven() {
             if (directionTextElement) {
                 directionTextElement.style.opacity = newOpacity > 0.4 ? 1 : 0;
             }
+
+            const directionTextElement2 = document.getElementById('direction-text2');
+            if (directionTextElement2) {
+                directionTextElement2.style.opacity = newOpacity > 0.4 ? 1 : 0;
+            }
         };
     
         window.addEventListener('scroll', handleScroll);
@@ -53,6 +59,7 @@ function SevenWaysToHeaven() {
                 <div id='stars3'></div>
                 <div id='stars3'></div>
                 <p id='direction-text'>Scroll Up ↑</p>
+                <p id='direction-text2'>⛧ all poems are fictional.</p>
 
                 <div className='poem-title-container'>
                     <h1 id='poem-title'>Seven Ways To Heaven</h1>

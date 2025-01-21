@@ -18,7 +18,10 @@
 body {
     text-align: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 20px;
 }
 
 h1 {
@@ -62,36 +65,37 @@ h1 {
 .main-title-container .title-seven {
     /* color: rgb(114, 22, 22); */
     font-family: "Beau Rivage", serif;
-    font-size: 5.5em;
+    font-size: 2em;
+    letter-spacing: 15px;
+    margin-top: 50px;
     margin-bottom: 69px;
 }
 
-.main-title-container .title-ways {
-    /* color: rgb(114, 22, 22); */
+/* .main-title-container .title-ways {
     font-family: "Beau Rivage", serif;
     font-size: 4.5em;
     margin-bottom: 69px;
 }
 
 .main-title-container .title-to {
-    /* color: rgb(114, 22, 22); */
     font-family: "Beau Rivage", serif;
     font-size: 4.5em;
     margin-bottom: 69px;
     margin-left: 57%;
-}
+} */
+
 
 .main-title-container .title-heaven {
     color: white;
     word-spacing: 50px;
-    margin-top: 12px;
+    margin-top: -40px;
 }
 
 .doorway-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 183.5px;
+    margin-top: 70.5px;
 }
 
 .doorway {
@@ -220,6 +224,18 @@ h1 {
     animation-delay: 6.5s;
 }
 
+.step-poem {
+    position: absolute;
+    width: 90%;
+    height: 0px;
+    background-color: maroon;
+    color: maroon;
+    border: 2.5px solid maroon;
+    margin-top: 45px;
+    opacity: 0;
+    transition: 1s ease;
+}
+
 .each-poem {
     display: flex;
     align-items: center;
@@ -235,7 +251,7 @@ h1 {
     margin-left: -30px;
     font-family: "Bellefair", serif;
     color: white;
-    font-weight: normal;
+    font-weight: 50;
     font-size: 22px;
     top: -10px;
     transition: 1s ease;
@@ -260,32 +276,22 @@ h1 {
     height: 5vh;
     object-fit: cover;
     object-position: 0% 90%;
-    border: 4px solid black;
-    border-radius: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
     transition: 1s ease;
-    opacity: 0.5;
+    opacity: 0.7;
 }
-
-/* .each-poem:hover img {
-    height: 30vh;
-    opacity: 22%;
-    transform: perspective(1500px) translateY(-5%) rotateX(45deg) translateZ(0);
-    cursor: pointer;
-}
-
-.each-poem:hover h2 {
-    color: white;
-    text-shadow: -2px 20px 17px var(--glow-color);
-    font-size: 40px;
-    cursor: pointer;
-} */
 
 .each-poem:hover img {
-    border-color: red;
+    opacity: 0;
+}
+
+.each-poem:hover .step-poem {
+    opacity: 1;
 }
 
 .each-poem:hover h2 {
-    color: red;
+    color: maroon;
 }
 
 @keyframes fadeIn {
@@ -612,6 +618,9 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        margin: 0px;
+    }
     /* main home page view */
     .main-image {
         width: 80vw;
@@ -632,29 +641,24 @@ h1 {
         color: white;
         font-size: 5.5em;
         word-spacing: 50px;
-        margin-top: 14.5px;
+        margin-top: -4.5px;
         letter-spacing: -7px;
     }
 
     .main-title-container .title-seven {
-        font-size: 5.1em;
+        font-size: 1.7em;
         margin-left: -45px;
-    }
-
-    .main-title-container .title-to {
-        font-family: "Beau Rivage", serif;
-        font-size: 4.5em;
-        margin-top: -3px;
-        margin-bottom: 80px;
-        margin-left: 57%;
+        letter-spacing: 15px;
+        margin-top: -10px;
     }
 
     .doorway-container {
-        margin-top: 178px;
+        margin-top: 60px;
     }
 
     .each-poem h2 {
-        font-weight: bold;
+        margin-top: 20px;
+        font-weight: 100;
     }
     
     /* end of main home page view */
@@ -725,7 +729,7 @@ h1 {
 
     .popup-boy {
         top: 210px; 
-        left: 4%; 
+        left: 12%; 
     }
 
     .popup-boy:before {
@@ -734,8 +738,8 @@ h1 {
     }
 
     .popup-rat {
-        top: 880px; 
-        left: 3%; 
+        top: 940px; 
+        left: -4%; 
     }
 
     .popup-rat:before {

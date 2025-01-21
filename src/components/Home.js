@@ -58,9 +58,9 @@ function Home() {
     return (
         <div className='main-page-container'>
             <div className='main-title-container'>
-                <h1 className='title-seven'>Seven Ways</h1>
+                <h1 className='title-seven'>Seven Ways <span className='title-to-one-line'>to</span></h1>
                 {/* <h1 className='title-ways'>Ways</h1> */}
-                <h1 className='title-to'>to</h1>
+                {/* <h1 className='title-to'>to</h1> */}
                 <h1 className='title-heaven'>HE VEN</h1>
             </div>
             <div className='main-contents-container'>
@@ -90,6 +90,7 @@ function Home() {
                                     className='main-image'
                                 />
                                 <h2>{poem.title}</h2>
+                                <img src={mainImage} alt="Main Page" className='step-poem' />
                             </div>
                         ))}
                     </div>

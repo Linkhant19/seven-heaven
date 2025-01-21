@@ -9,7 +9,8 @@ import Header from './Header';
 const image = require('../assets/images/photo5.JPG');
 
 function AMadmanAtTheGates() {
-    // use state for some clickable popups
+    // no body border for this page
+    document.body.style.border = 'none';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,6 +40,11 @@ function AMadmanAtTheGates() {
             if (directionTextElement) {
                 directionTextElement.style.opacity = newOpacity > 0.4 ? 1 : 0;
             }
+
+            const directionTextElement2 = document.getElementById('direction-text2');
+            if (directionTextElement2) {
+                directionTextElement2.style.opacity = newOpacity > 0.4 ? 1 : 0;
+            }
         };
     
         window.addEventListener('scroll', handleScroll);
@@ -53,6 +59,7 @@ function AMadmanAtTheGates() {
                 <div id='stars3'></div>
                 <div id='stars3'></div>
                 <p id='direction-text'>Scroll Up ↑</p>
+                <p id='direction-text2'>⛧ all poems are fictional.</p>
 
                 <div className='poem-title-container'>
                     <h1 id='poem-title' className='poem-title-madman'>A Madman At The Gates</h1>
@@ -60,7 +67,7 @@ function AMadmanAtTheGates() {
                 
                 <div className="poem-container">
                     <p className='subtitle'>
-                        A Madman At The Gates | August 2024<br />
+                        A Madman At The Gates | January 2025<br />
                     </p>
                     <div className='poem-image-container'>
                         <div className="image-background">

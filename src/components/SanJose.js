@@ -9,6 +9,9 @@ import Header from './Header';
 const image = require('../assets/images/photo1.JPG');
 
 function SanJose() {
+    // no body border for this page
+    document.body.style.border = 'none';
+
     // use state for some clickable popups
     const [showPopupBoy, setShowPopupBoy] = useState(false);
     const [showPopupRat, setShowPopupRat] = useState(false);
@@ -25,8 +28,8 @@ function SanJose() {
         const handleScroll = () => {
             const scrollTop = window.scrollY; 
             const maxScroll = document.body.scrollHeight - window.innerHeight; 
-            const scale = 4;  // so that we can acheive the desired effect faster
-            const minOpacity = 0.05;  // minimum opacity value that I want
+            const scale = 5;  // so that we can acheive the desired effect faster
+            const minOpacity = 0.04;  // minimum opacity value that I want
             const newOpacity = Math.max(
                 minOpacity,
                 1 - Math.min((scrollTop / maxScroll) * scale, 1) 
