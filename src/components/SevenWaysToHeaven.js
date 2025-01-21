@@ -175,7 +175,7 @@ function SevenWaysToHeaven() {
                         But, there is nothing that kills you faster than<br />
                         getting the taste of everything you ever wanted<br />
                         and having it ripped away from you<br />
-                        by some uncontrollable life forces. <br />
+                        by some unfortunate happenstance. <br />
                         You could have had it all…<br />
                         but now, you are at the gates of heaven, <br />
                         begging to be taken in. <br />
